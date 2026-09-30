@@ -3,51 +3,301 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Villar Lash</title>
+    <title>Villar Lash | Extensão de Cílios, Embelezamento do Olhar e Autoestima</title>
+    <!-- Metatag de descrição para SEO e leitores de tela -->
+    <meta name="description" content="Especialistas em extensão de cílios, Lash Lifting e tratamentos para o olhar. Agende seu horário na Villar Lash e realce sua autoestima.">
+    <!-- Vinculação do arquivo CSS externo com o HTML -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Villar Lash</h1>
-    <h2>Mais que cilios uma dose de autoestima</h2>
-    <h2>Oque a villar lash faz?</h2>
-    <p>Atua no mercado da beleza e estética visual, sendo especializada no embelezamento do olhar através de técnicas de alongamento, tratamento e estilização dos fios</p>
-    <h2>Quem Somos</h2>
 
-<p>A Villar Lash é uma empresa especializada em cílios, dedicada a realçar a beleza e a autoestima de cada cliente. Oferecemos produtos e serviços de qualidade para proporcionar um olhar marcante, elegante e cheio de personalidade.</p>
-<p>As principais atividades e especialidades da Villar Lash incluem:
- Alongamento de cílios: Aplicação de extensões com técnicas que transformam e valorizam o olhar.
- Tratamento dos fios: Cuidados voltados para a saúde, fortalecimento e manutenção dos cílios naturais.
- Estilização personalizada: Criação de designs de olhar marcantes, adaptados ao estilo de cada cliente.
- Oferta de produtos e serviços: Atuação tanto na prestação de serviços em estúdio quanto na disponibilização de produtos de alta qualidade para o segmento.
-</p>
-<p>Ratamentos e Saúde dos Fios
- Lash Lifting & Nutrição Avançada
-	 Curvatura e alinhamento dos seus próprios cílios naturais desde a raiz.
-	Inclui um banho de vitaminas e queratina para fortalecer, encorpar e tratar os fios de dentro para fora.
-	 Ideal para quem busca praticidade com um efeito de rímel natural e duradouro.
-✨ Extensões de Cílios (Alongamento)
- Extensão Clássica Fio a Fio
-	 Aplicação de uma extensão individual sobre cada cílio natural.
-	 Proporciona um efeito de rímel sofisticado, alongando e definindo o olhar com extrema naturalidade.
- Volume Russo
-	 Técnica avançada com a aplicação de pequenos leques (fans) de fios ultra-leves em cada cílio natural.
-	 Garante máxima densidade, preenchimento e um olhar marcante, glamouroso e volumoso.
- Volume Híbrido
-	 A união perfeita entre a delicadeza do Fio a Fio e o preenchimento do Volume Russo.
-	 Oferece um olhar texturizado, com volume na medida certa e efeito despojado.
- Efeitos de Estilização Personalizada (Efeito Molhado / Fox Eyes / Kim K)
-	 Design de olhar sob medida criado a partir do mapeamento do seu rosto.
-	 Técnicas modernas que acompanham as tendências do mercado para realçar sua personalidade única.
-🛠️ Manutenção e Cuidados
- Manutenção de Cílios
-	 Remoção dos fios crescidos e reposição de novas extensões.
-	 Serviço essencial a cada 15 ou 20 dias para manter o olhar sempre impecável, preenchido e com a saúde dos fios em dia.
- Remoção Segura de Extensões
-	 Retirada completa das extensões utilizando produtos em gel específicos e importados.
-	 Processo totalmente indolor que preserva a integridade e a saúde dos seus cílios naturais.
-</p>
-<p>A média geral de valores da Villar Lash varia de R$ 130,00 a R$ 280,00 para os procedimentos completos, dependendo da técnica escolhida. As manutenções e remoções ficam em uma faixa menor, entre R$ 40,00 e R$ 170,00.
-</p>
-<p>A Villar Lash é uma marca especializada no embelezamento do olhar e na estética visual, focada em elevar a autoestima de suas clientes através de técnicas seguras e personalizadas.
-</p>
+    <!--
+      ACESSIVIDADE (WCAG 2.4.1 - Bypass Blocks):
+      Atalho "Ir para o conteúdo principal" visível apenas via navegação por teclado (foco).
+      Permite aos leitores de tela e usuários de teclado pularem a navegação repetitiva.
+    -->
+    <a href="#main-content" class="skip-link">Pular para o conteúdo principal</a>
+
+    <!-- CABEÇALHO DA PÁGINA (<header>): Contém a marca principal e a navegação global -->
+    <header class="site-header">
+        <div class="header-container">
+            <!-- Título principal h1 representa o identificador máximo do site -->
+            <h1 class="brand-logo">Villar Lash</h1>
+            
+            <!-- NAVEGAÇÃO PRINCIPAL (<nav>): Marcada com aria-label para diferenciar de outros blocos nav se existirem -->
+            <nav class="main-navigation" aria-label="Navegação Principal">
+                <ul class="nav-list">
+                    <li><a href="#quem-somos">Quem Somos</a></li>
+                    <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#precos">Tabela de Preços</a></li>
+                    <li><a href="#contato" class="btn-nav-highlight">Agendar Horário</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- SEÇÃO HERO / APRESENTAÇÃO IMPACTANTE -->
+    <section class="hero-banner" aria-label="Destaque institucional">
+        <div class="hero-content">
+            <!-- Slogan em h2 para destacar a proposta de valor principal -->
+            <h2 class="hero-title">Mais que cílios, uma dose de autoestima.</h2>
+            <p class="hero-subtitle">Especialistas em embelezamento do olhar através de técnicas exclusivas de alongamento, tratamento e estilização de fios.</p>
+            <a href="#contato" class="btn btn-primary">Agende sua avaliação</a>
+        </div>
+    </section>
+
+    <!-- CONTEÚDO PRINCIPAL DA PÁGINA (<main>): O id "main-content" é o destino do skip-link -->
+    <main id="main-content">
+
+        <!-- SEÇÃO: QUEM SOMOS -->
+        <section id="quem-somos" class="section-container">
+            <div class="section-header">
+                <h2>Quem Somos</h2>
+                <p class="section-intro">Conheça nossa história e propósito no mercado da estética visual.</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>A <strong>Villar Lash</strong> é uma empresa especializada no embelezamento do olhar e na estética visual, dedicada a realçar a beleza e a autoestima de cada cliente. Oferecemos produtos e serviços da mais alta qualidade para proporcionar um olhar marcante, elegante e cheio de personalidade.</p>
+                    <p>Atuamos com foco na saúde dos fios naturais, combinando técnicas inovadoras e produtos importados para garantir resultados duradouros e sem danos.</p>
+                </div>
+                <!-- ASIDE: Informações complementares ou destaques rápidos -->
+                <aside class="about-highlights" aria-label="Destaques do estúdio">
+                    <h3>Nossos Diferenciais</h3>
+                    <ul>
+                        <li>Atendimento personalizado com mapeamento facial.</li>
+                        <li>Produtos específicos, testados e dermatologicamente seguros.</li>
+                        <li>Preservação rigorosa da integridade dos cílios naturais.</li>
+                    </ul>
+                </aside>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: SERVIÇOS -->
+        <section id="servicos" class="section-container bg-alt">
+            <div class="section-header">
+                <h2>Nossos Serviços e Especialidades</h2>
+                <p class="section-intro">Técnicas exclusivas desenhadas para transformar e valorizar o seu olhar.</p>
+            </div>
+
+            <div class="cards-container">
+                
+                <!-- CARD 1: Tratamento e Saúde -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Saúde dos Fios</span>
+                        <h3>Lash Lifting & Nutrição Avançada</h3>
+                        <p>Curvatura e alinhamento dos seus próprios cílios naturais desde a raiz. Inclui um banho de vitaminas e queratina para fortalecer, encorpar e tratar os fios de dentro para fora.</p>
+                        <p class="card-recommendation"><strong>Ideal para:</strong> Quem busca praticidade com efeito de rímel natural e duradouro.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 2: Extensões -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Alongamento</span>
+                        <h3>Extensão Clássica Fio a Fio</h3>
+                        <p>Aplicação de uma extensão individual sobre cada cílio natural. Proporciona um efeito de rímel sofisticado, alongando e definindo o olhar com extrema naturalidade.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 3: Volume Russo -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Preenchimento</span>
+                        <h3>Volume Russo</h3>
+                        <p>Técnica avançada com a aplicação de pequenos leques (fans) de fios ultra-leves em cada cílio natural. Garante máxima densidade, preenchimento e um olhar marcante.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 4: Volume Híbrido -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Textura</span>
+                        <h3>Volume Híbrido</h3>
+                        <p>A união perfeita entre a delicadeza do Fio a Fio e o preenchimento do Volume Russo. Oferece um olhar texturizado com volume na medida certa.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 5: Estilização Personalizada -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Tendência</span>
+                        <h3>Efeitos Personalizados (Efeito Molhado / Fox Eyes / Kim K)</h3>
+                        <p>Design de olhar sob medida criado a partir do mapeamento do seu rosto. Técnicas modernas para realçar sua personalidade única.</p>
+                    </div>
+                </article>
+
+                <!-- CARD 6: Manutenção e Remoção -->
+                <article class="service-card">
+                    <div class="card-body">
+                        <span class="badge">Cuidados</span>
+                        <h3>Manutenção & Remoção Segura</h3>
+                        <p>Manutenções periódicas (a cada 15 a 20 dias) para reposição de fios, além do serviço de remoção total indolor utilizando produtos em gel importados que preservam os fios naturais.</p>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        <!-- SEÇÃO: TABELA DE PREÇOS -->
+        <section id="precos" class="section-container">
+            <div class="section-header">
+                <h2>Investimento e Valores</h2>
+                <p class="section-intro">Transparência para você escolher o procedimento perfeito para a sua rotina.</p>
+            </div>
+
+            <!-- Tabela formatada e acessível -->
+            <div class="table-wrapper">
+                <table class="price-table">
+                    <caption>Valores médios para procedimentos, manutenções e remoções na Villar Lash.</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Categoria de Serviço</th>
+                            <th scope="col">Descrição dos Procedimentos</th>
+                            <th scope="col">Média de Investimento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Procedimentos Completos</th>
+                            <td>Alongamentos (Fio a Fio, Volumes, Efeitos) e Lash Lifting completo.</td>
+                            <td class="price-value">R$ 130,00 a R$ 280,00</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Manutenções e Remoções</th>
+                            <td>Manutenção periódica de extensores e remoção química segura com gel.</td>
+                            <td class="price-value">R$ 40,00 a R$ 170,00</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- SEÇÃO: CONTATO E FORMULÁRIO ACESSÍVEL -->
+        <section id="contato" class="section-container bg-alt">
+            <div class="section-header">
+                <h2>Agende seu Horário</h2>
+                <p class="section-intro">Preencha o formulário abaixo para entrar em contato conosco ou tire suas dúvidas.</p>
+            </div>
+
+            <div class="contact-wrapper">
+                <!-- FORMULÁRIO 100% ACESSÍVEL -->
+                <!-- novalidate permite gerenciar e testar a acessibilidade visual de validação -->
+                <form action="#" method="POST" class="contact-form" novalidate>
+                    <fieldset>
+                        <legend>Dados de Contato e Agendamento</legend>
+                        <p class="form-instructions" id="form-instructions">Campos marcados com asterisco (<span class="required-asterisk" aria-hidden="true">*</span>) são de preenchimento obrigatório.</p>
+
+                        <!-- CAMPO: NOME -->
+                        <div class="form-group">
+                            <label for="nome">
+                                Nome completo <span class="required-asterisk" aria-hidden="true">*</span>
+                            </label>
+                            <input 
+                                type="text" 
+                                id="nome" 
+                                name="nome" 
+                                required 
+                                aria-required="true"
+                                autocomplete="name"
+                                placeholder="Ex.: Maria Silva">
+                        </div>
+
+                        <!-- CAMPO: E-MAIL -->
+                        <div class="form-group">
+                            <label for="email">
+                                E-mail <span class="required-asterisk" aria-hidden="true">*</span>
+                            </label>
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                required 
+                                aria-required="true"
+                                autocomplete="email"
+                                placeholder="exemplo@dominio.com">
+                        </div>
+
+                        <!-- CAMPO: TELEFONE -->
+                        <div class="form-group">
+                            <label for="telefone">
+                                Telefone / WhatsApp <span class="required-asterisk" aria-hidden="true">*</span>
+                            </label>
+                            <input 
+                                type="tel" 
+                                id="telefone" 
+                                name="telefone" 
+                                required 
+                                aria-required="true"
+                                autocomplete="tel"
+                                placeholder="(00) 00000-0000"
+                                aria-describedby="tel-help">
+                            <small id="tel-help" class="field-help">Usaremos este número para confirmar o seu agendamento.</small>
+                        </div>
+
+                        <!-- CAMPO: SELEÇÃO DE SERVIÇO -->
+                        <div class="form-group">
+                            <label for="servico-interesse">
+                                Serviço de Interesse <span class="required-asterisk" aria-hidden="true">*</span>
+                            </label>
+                            <select id="servico-interesse" name="servico-interesse" required aria-required="true">
+                                <option value="" disabled selected>Selecione um procedimento...</option>
+                                <option value="lash-lifting">Lash Lifting & Nutrição Avançada</option>
+                                <option value="fio-a-fio">Extensão Clássica Fio a Fio</option>
+                                <option value="volume-russo">Volume Russo</option>
+                                <option value="volume-hibrido">Volume Híbrido</option>
+                                <option value="efeitos-especiais">Efeitos de Estilização (Fox Eyes, Molhado, Kim K)</option>
+                                <option value="manutencao-remocao">Manutenção ou Remoção Segura</option>
+                            </select>
+                        </div>
+
+                        <!-- CAMPO: MENSAGEM -->
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem ou preferência de data/horário</label>
+                            <textarea 
+                                id="mensagem" 
+                                name="mensagem" 
+                                rows="4" 
+                                placeholder="Conte-nos um pouco sobre a sua disponibilidade ou dúvidas..."></textarea>
+                        </div>
+
+                        <!-- BOTÃO DE SUBMISSÃO -->
+                        <button type="submit" class="btn btn-submit">Enviar Solicitação de Agendamento</button>
+                    </fieldset>
+                </form>
+
+                <!-- SIMULADOR DE BOTÕES INTERATIVOS / LINKS DE REDES SOCIAIS -->
+                <aside class="contact-links" aria-label="Canais diretos de atendimento">
+                    <h3>Atendimento Rápido</h3>
+                    <p>Prefere um contato direto via redes sociais ou aplicativo de mensagem?</p>
+                    <div class="interactive-buttons-stack">
+                        <!-- Links com estilo visual de botão e papéis semânticos corretos -->
+                        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener noreferrer" class="btn btn-whatsapp">
+                            Falar no WhatsApp <span class="sr-only">(Abre em uma nova aba)</span>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+                            Siga no Instagram <span class="sr-only">(Abre em uma nova aba)</span>
+                        </a>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- RODAPÉ PÁGINA (<footer>) -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-info">
+                <p class="footer-brand">Villar Lash</p>
+                <p>Especialistas em embelezamento do olhar e estética visual.</p>
+            </div>
+            <div class="footer-copyright">
+                <p>&copy; 2026 Villar Lash. Todos os direitos reservados.</p>
+                <p class="footer-a11y-badge">Desenvolvido com foco em acessibilidade e inclusão web (WCAG 2.1 AA).</p>
+            </div>
+        </div>
+    </footer>
+
 </body>
 </html>
